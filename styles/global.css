@@ -1,0 +1,56 @@
+
+/*#0267c1*/
+/*#0075c4*/
+/*#efa00b*/
+/*#d65108*/
+/*#591f0a*/
+
+
+/* This is the global style of my website. */
+
+.stop-float {
+    clear: both;
+    height: 5px;
+}
+html {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+body {
+    padding: 1rem 3rem;
+    margin: 0 auto;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* header styles */
+header h1, header p {
+    /*text-align: center;*/
+    color: #333;
+}
+
+
+/* footer styles */
+footer p {
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-radius: 0.4rem;
+}
+footer ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+/* colorful text */
+.text-primary {
+    color: blue;
+}
+.text-warning {
+    color: red;
+}

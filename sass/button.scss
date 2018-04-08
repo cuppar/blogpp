@@ -1,0 +1,270 @@
+//----- variable -----
+//btn
+$btn-up-color: #AAFFFF;
+$btn-down-color: #00CCFF;
+$btn-up-hover-color: #00FFFF;
+$btn-down-hover-color: #00AAFF;
+$btn-shadow-color: #0066FF;
+$btn-font-color: black;
+$btn-padding-up: 1rem;
+$btn-padding-right: 1rem;
+$btn-padding-bottom: 1rem;
+$btn-padding-left: 1rem;
+$btn-margin-up: 1rem;
+$btn-margin-right: 1rem;
+$btn-margin-bottom: 1rem;
+$btn-margin-left: 1rem;
+$btn-border-witch: 0.1rem;
+$btn-border-color: #3300CC;
+$btn-border-color-active: #330099;
+
+
+//btn-danger
+$btn-danger-up-color: #FF0000;
+$btn-danger-down-color: #990000;
+$btn-danger-up-hover-color: #CC0000;
+$btn-danger-down-hover-color: #660000;
+$btn-danger-shadow-color: black;
+$btn-danger-font-color: #FFFFFF;
+$btn-danger-padding-up: 1rem;
+$btn-danger-padding-right: 1rem;
+$btn-danger-padding-bottom: 1rem;
+$btn-danger-padding-left: 1rem;
+$btn-danger-margin-up: 1rem;
+$btn-danger-margin-right: 1rem;
+$btn-danger-margin-bottom: 1rem;
+$btn-danger-margin-left: 1rem;
+$btn-danger-border-witch: 0.1rem;
+$btn-danger-border-color: black;
+$btn-danger-border-color-active: black;
+
+
+//btn-normal
+$btn-normal-up-color: #fafbfc;
+$btn-normal-down-color: #eff3f6;
+$btn-normal-up-hover-color: #f0f3f6;
+$btn-normal-down-hover-color: #e6ebf1;
+$btn-normal-shadow-color: #aaaaaa;
+$btn-normal-font-color: black;
+$btn-normal-padding-up: 1rem;
+$btn-normal-padding-right: 1rem;
+$btn-normal-padding-bottom: 1rem;
+$btn-normal-padding-left: 1rem;
+$btn-normal-margin-up: 1rem;
+$btn-normal-margin-right: 1rem;
+$btn-normal-margin-bottom: 1rem;
+$btn-normal-margin-left: 1rem;
+$btn-normal-border-witch: 0.1rem;
+$btn-normal-border-color: #DBDBDB;
+$btn-normal-border-color-active: #aaaaaa;
+
+
+//btn-add5rem
+$btn-add5rem-padding-up: 1rem;
+$btn-add5rem-padding-right: 5rem;
+$btn-add5rem-padding-bottom: 1rem;
+$btn-add5rem-padding-left: 5rem;
+
+
+//----- css -----
+//btn
+.btn {
+  text-align: center;
+  display: inline-block;
+  color: $btn-font-color;
+  background-color: $btn-down-color;
+  background-image: linear-gradient(
+    -180deg, $btn-up-color 60%, $btn-down-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-padding-up $btn-padding-right
+   $btn-padding-bottom $btn-padding-left;
+  margin: $btn-margin-up $btn-margin-right
+   $btn-margin-bottom $btn-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-shadow-color;
+  border: $btn-border-witch solid $btn-border-color;
+}
+.btn:hover {
+  text-align: center;
+  display: inline-block;
+  color: $btn-font-color;
+  background-color: $btn-down-hover-color;
+  background-image: linear-gradient(
+    -180deg, $btn-up-hover-color 60%, $btn-down-hover-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-padding-up $btn-padding-right
+   $btn-padding-bottom $btn-padding-left;
+  margin: $btn-margin-up $btn-margin-right
+   $btn-margin-bottom $btn-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-shadow-color;
+  border: $btn-border-witch solid $btn-border-color-active;
+}
+.btn:active {
+  text-align: center;
+  display: inline-block;
+  color: $btn-font-color;
+  background-color: $btn-up-hover-color;
+  background-image: linear-gradient(
+    -180deg, $btn-down-hover-color 60%, $btn-up-hover-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-padding-up $btn-padding-right
+   $btn-padding-bottom $btn-padding-left;
+  margin: $btn-margin-up $btn-margin-right
+   $btn-margin-bottom $btn-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-shadow-color;
+  border: $btn-border-witch solid $btn-border-color-active;
+}
+
+
+//btn-danger
+.btn-danger {
+  text-align: center;
+  display: inline-block;
+  color: $btn-danger-font-color;
+  background-color: $btn-danger-down-color;
+  background-image: linear-gradient(
+    -180deg, $btn-danger-up-color 60%, $btn-danger-down-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-danger-padding-up $btn-danger-padding-right
+   $btn-danger-padding-bottom $btn-danger-padding-left;
+  margin: $btn-danger-margin-up $btn-danger-margin-right
+   $btn-danger-margin-bottom $btn-danger-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-danger-shadow-color;
+  border: $btn-danger-border-witch solid $btn-danger-border-color;
+}
+.btn-danger:hover {
+  text-align: center;
+  display: inline-block;
+  color: $btn-danger-font-color;
+  background-color: $btn-danger-down-hover-color;
+  background-image: linear-gradient(
+    -180deg, $btn-danger-up-hover-color 60%, $btn-danger-down-hover-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-danger-padding-up $btn-danger-padding-right
+   $btn-danger-padding-bottom $btn-danger-padding-left;
+  margin: $btn-danger-margin-up $btn-danger-margin-right
+   $btn-danger-margin-bottom $btn-danger-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-danger-shadow-color;
+  border: $btn-danger-border-witch solid $btn-danger-border-color-active;
+}
+.btn-danger:active {
+  text-align: center;
+  display: inline-block;
+  color: $btn-danger-font-color;
+  background-color: $btn-danger-up-hover-color;
+  background-image: linear-gradient(
+    -180deg, $btn-danger-down-hover-color 60%, $btn-danger-up-hover-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-danger-padding-up $btn-danger-padding-right
+   $btn-danger-padding-bottom $btn-danger-padding-left;
+  margin: $btn-danger-margin-up $btn-danger-margin-right
+   $btn-danger-margin-bottom $btn-danger-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-danger-shadow-color;
+  border: $btn-danger-border-witch solid $btn-danger-border-color-active;
+}
+
+
+//btn-normal
+.btn-normal {
+  text-align: center;
+  display: inline-block;
+  color: $btn-normal-font-color;
+  background-color: $btn-normal-down-color;
+  background-image: linear-gradient(
+    -180deg, $btn-normal-up-color 0%, $btn-normal-down-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-normal-padding-up $btn-normal-padding-right
+   $btn-normal-padding-bottom $btn-normal-padding-left;
+  margin: $btn-normal-margin-up $btn-normal-margin-right
+   $btn-normal-margin-bottom $btn-normal-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-normal-shadow-color;
+  border: $btn-normal-border-witch solid $btn-normal-border-color;
+}
+.btn-normal:hover {
+  text-align: center;
+  display: inline-block;
+  color: $btn-normal-font-color;
+  background-color: $btn-normal-down-hover-color;
+  background-image: linear-gradient(
+    -180deg, $btn-normal-up-hover-color 0%, $btn-normal-down-hover-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-normal-padding-up $btn-normal-padding-right
+   $btn-normal-padding-bottom $btn-normal-padding-left;
+  margin: $btn-normal-margin-up $btn-normal-margin-right
+   $btn-normal-margin-bottom $btn-normal-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-normal-shadow-color;
+  border: $btn-normal-border-witch solid $btn-normal-border-color-active;
+}
+.btn-normal:active {
+  text-align: center;
+  display: inline-block;
+  color: $btn-normal-font-color;
+  background-color: $btn-normal-up-hover-color;
+  background-image: linear-gradient(
+    -180deg, $btn-normal-down-hover-color 0%, $btn-normal-up-hover-color 90%);
+  border-radius: 0.8rem;
+  padding: $btn-normal-padding-up $btn-normal-padding-right
+   $btn-normal-padding-bottom $btn-normal-padding-left;
+  margin: $btn-normal-margin-up $btn-normal-margin-right
+   $btn-normal-margin-bottom $btn-normal-margin-left;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem $btn-normal-shadow-color;
+  border: $btn-normal-border-witch solid $btn-normal-border-color-active;
+}
+
+
+//btn-add5rem
+.btn-add5rem {
+  padding: $btn-add5rem-padding-up $btn-add5rem-padding-right
+   $btn-add5rem-padding-bottom $btn-add5rem-padding-left !important;
+}
+
+
+//btn-10rem
+.btn-10rem {
+  box-sizing: border-box;
+  width: 10rem;
+}
+
+
+//btn-20rem
+.btn-20rem {
+  box-sizing: border-box;
+  width: 20rem;
+}
+
+
+//btn-30rem
+.btn-30rem {
+  box-sizing: border-box;
+  width: 30rem;
+}
+
+
+//btn-40rem
+.btn-40rem {
+  box-sizing: border-box;
+  width: 40rem;
+}
+
+//btn-50rem
+.btn-50rem {
+  box-sizing: border-box;
+  width: 50rem;
+}

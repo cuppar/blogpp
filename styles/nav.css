@@ -1,0 +1,35 @@
+/* This is the style for horizontal navigation. */
+
+nav.nav-hori {
+    background-color: #666;
+    border-radius: 4px;
+    padding-top: 2px;
+}
+
+nav.nav-hori ul li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+nav.nav-hori ul {
+    margin: 0;
+    padding: 7px;
+}
+
+nav.nav-hori a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li.float-left {
+    float: left;
+}
+
+nav li.float-right {
+    float: right;
+}
+
+nav.nav-hori label {
+    font-size: 1.2rem;
+    color: #111;
+}
