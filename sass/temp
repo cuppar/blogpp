@@ -1,0 +1,4 @@
+$btn-normal-margin-top: $margin-top;
+$btn-normal-margin-right: $margin-right;
+$btn-normal-margin-bottom: $margin-bottom;
+$btn-normal-margin-left: $margin-left;

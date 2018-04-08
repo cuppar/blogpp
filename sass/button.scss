@@ -1,4 +1,15 @@
 //----- variable -----
+//total
+$padding-top: 0;
+$padding-right: 1rem;
+$padding-bottom: 0;
+$padding-left: 1rem;
+$margin-top: 0;
+$margin-right: 1rem;
+$margin-bottom: 0;
+$margin-left: 1rem;
+
+
 //btn
 $btn-up-color: #AAFFFF;
 $btn-down-color: #00CCFF;
@@ -6,14 +17,14 @@ $btn-up-hover-color: #00FFFF;
 $btn-down-hover-color: #00AAFF;
 $btn-shadow-color: #0066FF;
 $btn-font-color: black;
-$btn-padding-up: 1rem;
-$btn-padding-right: 1rem;
-$btn-padding-bottom: 1rem;
-$btn-padding-left: 1rem;
-$btn-margin-up: 1rem;
-$btn-margin-right: 1rem;
-$btn-margin-bottom: 1rem;
-$btn-margin-left: 1rem;
+$btn-padding-top: $padding-top;
+$btn-padding-right: $padding-right;
+$btn-padding-bottom: $padding-bottom;
+$btn-padding-left: $padding-left;
+$btn-margin-top: $margin-top;
+$btn-margin-right: $margin-right;
+$btn-margin-bottom: $margin-bottom;
+$btn-margin-left: $margin-left;
 $btn-border-witch: 0.1rem;
 $btn-border-color: #3300CC;
 $btn-border-color-active: #330099;
@@ -26,14 +37,14 @@ $btn-danger-up-hover-color: #CC0000;
 $btn-danger-down-hover-color: #660000;
 $btn-danger-shadow-color: black;
 $btn-danger-font-color: #FFFFFF;
-$btn-danger-padding-up: 1rem;
-$btn-danger-padding-right: 1rem;
-$btn-danger-padding-bottom: 1rem;
-$btn-danger-padding-left: 1rem;
-$btn-danger-margin-up: 1rem;
-$btn-danger-margin-right: 1rem;
-$btn-danger-margin-bottom: 1rem;
-$btn-danger-margin-left: 1rem;
+$btn-danger-padding-top: $padding-top;
+$btn-danger-padding-right: $padding-right;
+$btn-danger-padding-bottom: $padding-bottom;
+$btn-danger-padding-left: $padding-left;
+$btn-danger-margin-top: $margin-top;
+$btn-danger-margin-right: $margin-right;
+$btn-danger-margin-bottom: $margin-bottom;
+$btn-danger-margin-left: $margin-left;
 $btn-danger-border-witch: 0.1rem;
 $btn-danger-border-color: black;
 $btn-danger-border-color-active: black;
@@ -46,21 +57,21 @@ $btn-normal-up-hover-color: #f0f3f6;
 $btn-normal-down-hover-color: #e6ebf1;
 $btn-normal-shadow-color: #aaaaaa;
 $btn-normal-font-color: black;
-$btn-normal-padding-up: 1rem;
-$btn-normal-padding-right: 1rem;
-$btn-normal-padding-bottom: 1rem;
-$btn-normal-padding-left: 1rem;
-$btn-normal-margin-up: 1rem;
-$btn-normal-margin-right: 1rem;
-$btn-normal-margin-bottom: 1rem;
-$btn-normal-margin-left: 1rem;
+$btn-normal-padding-top: $padding-top;
+$btn-normal-padding-right: $padding-right;
+$btn-normal-padding-bottom: $padding-bottom;
+$btn-normal-padding-left: $padding-left;
+$btn-normal-margin-top: $margin-top;
+$btn-normal-margin-right: $margin-right;
+$btn-normal-margin-bottom: $margin-bottom;
+$btn-normal-margin-left: $margin-left;
 $btn-normal-border-witch: 0.1rem;
 $btn-normal-border-color: #DBDBDB;
 $btn-normal-border-color-active: #aaaaaa;
 
 
 //btn-add5rem
-$btn-add5rem-padding-up: 1rem;
+$btn-add5rem-padding-top: 1rem;
 $btn-add5rem-padding-right: 5rem;
 $btn-add5rem-padding-bottom: 1rem;
 $btn-add5rem-padding-left: 5rem;
@@ -76,9 +87,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-up-color 60%, $btn-down-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-padding-up $btn-padding-right
+  padding: $btn-padding-top $btn-padding-right
    $btn-padding-bottom $btn-padding-left;
-  margin: $btn-margin-up $btn-margin-right
+  margin: $btn-margin-top $btn-margin-right
    $btn-margin-bottom $btn-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -93,9 +104,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-up-hover-color 60%, $btn-down-hover-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-padding-up $btn-padding-right
+  padding: $btn-padding-top $btn-padding-right
    $btn-padding-bottom $btn-padding-left;
-  margin: $btn-margin-up $btn-margin-right
+  margin: $btn-margin-top $btn-margin-right
    $btn-margin-bottom $btn-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -110,9 +121,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-down-hover-color 60%, $btn-up-hover-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-padding-up $btn-padding-right
+  padding: $btn-padding-top $btn-padding-right
    $btn-padding-bottom $btn-padding-left;
-  margin: $btn-margin-up $btn-margin-right
+  margin: $btn-margin-top $btn-margin-right
    $btn-margin-bottom $btn-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -130,9 +141,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-danger-up-color 60%, $btn-danger-down-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-danger-padding-up $btn-danger-padding-right
+  padding: $btn-danger-padding-top $btn-danger-padding-right
    $btn-danger-padding-bottom $btn-danger-padding-left;
-  margin: $btn-danger-margin-up $btn-danger-margin-right
+  margin: $btn-danger-margin-top $btn-danger-margin-right
    $btn-danger-margin-bottom $btn-danger-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -147,9 +158,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-danger-up-hover-color 60%, $btn-danger-down-hover-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-danger-padding-up $btn-danger-padding-right
+  padding: $btn-danger-padding-top $btn-danger-padding-right
    $btn-danger-padding-bottom $btn-danger-padding-left;
-  margin: $btn-danger-margin-up $btn-danger-margin-right
+  margin: $btn-danger-margin-top $btn-danger-margin-right
    $btn-danger-margin-bottom $btn-danger-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -164,9 +175,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-danger-down-hover-color 60%, $btn-danger-up-hover-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-danger-padding-up $btn-danger-padding-right
+  padding: $btn-danger-padding-top $btn-danger-padding-right
    $btn-danger-padding-bottom $btn-danger-padding-left;
-  margin: $btn-danger-margin-up $btn-danger-margin-right
+  margin: $btn-danger-margin-top $btn-danger-margin-right
    $btn-danger-margin-bottom $btn-danger-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -184,9 +195,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-normal-up-color 0%, $btn-normal-down-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-normal-padding-up $btn-normal-padding-right
+  padding: $btn-normal-padding-top $btn-normal-padding-right
    $btn-normal-padding-bottom $btn-normal-padding-left;
-  margin: $btn-normal-margin-up $btn-normal-margin-right
+  margin: $btn-normal-margin-top $btn-normal-margin-right
    $btn-normal-margin-bottom $btn-normal-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -201,9 +212,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-normal-up-hover-color 0%, $btn-normal-down-hover-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-normal-padding-up $btn-normal-padding-right
+  padding: $btn-normal-padding-top $btn-normal-padding-right
    $btn-normal-padding-bottom $btn-normal-padding-left;
-  margin: $btn-normal-margin-up $btn-normal-margin-right
+  margin: $btn-normal-margin-top $btn-normal-margin-right
    $btn-normal-margin-bottom $btn-normal-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -218,9 +229,9 @@ $btn-add5rem-padding-left: 5rem;
   background-image: linear-gradient(
     -180deg, $btn-normal-down-hover-color 0%, $btn-normal-up-hover-color 90%);
   border-radius: 0.8rem;
-  padding: $btn-normal-padding-up $btn-normal-padding-right
+  padding: $btn-normal-padding-top $btn-normal-padding-right
    $btn-normal-padding-bottom $btn-normal-padding-left;
-  margin: $btn-normal-margin-up $btn-normal-margin-right
+  margin: $btn-normal-margin-top $btn-normal-margin-right
    $btn-normal-margin-bottom $btn-normal-margin-left;
   font-size: 2rem;
   text-decoration: none;
@@ -231,8 +242,15 @@ $btn-add5rem-padding-left: 5rem;
 
 //btn-add5rem
 .btn-add5rem {
-  padding: $btn-add5rem-padding-up $btn-add5rem-padding-right
+  padding: $btn-add5rem-padding-top $btn-add5rem-padding-right
    $btn-add5rem-padding-bottom $btn-add5rem-padding-left;
+}
+
+
+//btn-5rem
+.btn-5rem {
+  box-sizing: border-box;
+  width: 5rem;
 }
 
 

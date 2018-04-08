@@ -17,8 +17,14 @@ html {
     font-size: 10px;
 }
 body {
-    padding: 1rem 3rem;
     margin: 0 auto;
+}
+#content {
+    background-image: url(../images/bg.png);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 ul {
     padding: 0;
@@ -31,6 +37,13 @@ header h1, header p {
     color: #333;
 }
 
+/* footer {
+    width:100%; 
+    position:fixed; 
+    left:0; 
+    bottom:0;
+    background: gray;
+} */
 
 /* footer styles */
 footer p {

@@ -5,8 +5,8 @@
   background-color: #00CCFF;
   background-image: linear-gradient(-180deg, #AAFFFF 60%, #00CCFF 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem #0066FF;
@@ -20,8 +20,8 @@
   background-color: #00AAFF;
   background-image: linear-gradient(-180deg, #00FFFF 60%, #00AAFF 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem #0066FF;
@@ -35,8 +35,8 @@
   background-color: #00FFFF;
   background-image: linear-gradient(-180deg, #00AAFF 60%, #00FFFF 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem #0066FF;
@@ -50,8 +50,8 @@
   background-color: #990000;
   background-image: linear-gradient(-180deg, #FF0000 60%, #990000 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
@@ -65,8 +65,8 @@
   background-color: #660000;
   background-image: linear-gradient(-180deg, #CC0000 60%, #660000 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
@@ -80,8 +80,8 @@
   background-color: #CC0000;
   background-image: linear-gradient(-180deg, #660000 60%, #CC0000 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
@@ -95,8 +95,8 @@
   background-color: #eff3f6;
   background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem #aaaaaa;
@@ -110,8 +110,8 @@
   background-color: #e6ebf1;
   background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem #aaaaaa;
@@ -125,8 +125,8 @@
   background-color: #f0f3f6;
   background-image: linear-gradient(-180deg, #e6ebf1 0%, #f0f3f6 90%);
   border-radius: 0.8rem;
-  padding: 1rem 1rem 1rem 1rem;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem;
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0.2rem 0.2rem 0.5rem #aaaaaa;
@@ -135,6 +135,11 @@
 
 .btn-add5rem {
   padding: 1rem 5rem 1rem 5rem;
+}
+
+.btn-5rem {
+  box-sizing: border-box;
+  width: 5rem;
 }
 
 .btn-10rem {
