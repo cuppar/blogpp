@@ -1,12 +1,18 @@
 /* This is the style for horizontal navigation. */
+//
+$nav-bgcolor: #002730;
+$nav-font-color: rgba(255, 255, 255, 0.8);
+$nav-font-size: 2rem;
+$nav-font-family: Arial Georgia;
+
 .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 2rem;
-  font-family: Arial Georgia;
+  color: $nav-font-color;
+  font-size: $nav-font-size;
+  font-family: $nav-font-family;
 }
 
 nav.nav-hori {
-  background-color: #002730;
+  background-color: $nav-bgcolor;
   border-radius: 0.4rem;
   padding-top: 0.2rem;
 }
@@ -33,5 +39,3 @@ nav li.float-left {
 nav li.float-right {
   float: right;
 }
-
-/*# sourceMappingURL=nav.css.map */
