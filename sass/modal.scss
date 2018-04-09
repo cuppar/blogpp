@@ -1,5 +1,9 @@
 $modal-bg-color: rgba(236, 214, 214, 0.6);
-$modal-login-color: white;
+$modal-login-color: #FAFBFC;
+$modal-border-color: #002730;
+$modal-focus-border-color: #2486fa;
+$modal-focus-outline-color: #bec6f1;
+
 
 #modal-bg {
   position: fixed;
@@ -12,9 +16,48 @@ $modal-login-color: white;
 #modal-login {
   position: fixed;
   background-color: $modal-login-color;
+  background-image: linear-gradient(
+    35deg, white 75%, rgba(9, 185, 197, 0.952) 0%
+  );
   width: 20%;
   margin: 17% 35%;
-  padding: 5rem;
+  padding: 4rem;
   z-index: -1;
-  border: red 1rem solid;
+  border: $modal-border-color 0.2rem solid;
+  border-radius: 1rem;
+  text-align: left;
 }
+
+.focus-light:focus {
+  border: $modal-focus-border-color 0.2rem solid;
+  outline: $modal-focus-outline-color 0.3rem solid;
+  outline-offset: 0;
+}
+
+.input-text {
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  min-height: 3rem;
+  min-width: 25rem;
+  font-size: 1.5rem;
+  box-shadow: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal-label {
+  font-size: 2rem;
+}
+
+.modal-logo {
+  text-align: right;
+  font-size: 3rem;
+  color: white;
+  font-style: bold;
+  margin-right: -2rem;
+  margin-top: -2rem;
+}
+
+
+
