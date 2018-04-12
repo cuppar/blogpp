@@ -19,6 +19,19 @@
   text-align: left;
 }
 
+#modal-signup {
+  position: fixed;
+  background-color: #FAFBFC;
+  background-image: linear-gradient(35deg, white 75%, rgba(9, 185, 197, 0.952) 0%);
+  width: 20%;
+  margin: 10% 37%;
+  padding: 4rem;
+  z-index: -9998;
+  border: #002730 0.2rem solid;
+  border-radius: 1rem;
+  text-align: left;
+}
+
 .focus-light:focus {
   border: #2486fa 0.2rem solid;
   outline: #bec6f1 0.3rem solid;

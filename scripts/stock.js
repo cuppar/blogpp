@@ -1,3 +1,4 @@
+'use strict'
 compute.onclick = function () {
   //输入
   var stock_price = document.getElementById('stock-price').value
@@ -87,6 +88,7 @@ compute.onclick = function () {
     + tax_sell_yongjin_baodi + tax_sell_yinhua_baodi
   // 每股上税baodi
   var tax_p_stock_baodi = tax_total_baodi / stock_num
+  var stock_price_baodi = tax_p_stock_baodi + stock_price
   // 每股上税率baodi
   var tax_p_stock_precent_baodi = tax_p_stock_baodi / stock_price
 
@@ -112,7 +114,7 @@ compute.onclick = function () {
   opt_tax_p_stock_precent_baodi.innerHTML = parseFloat(tax_p_stock_precent_baodi).toFixed(5)
   opt_tax_p_stock_precent.innerHTML = parseFloat(tax_p_stock_precent).toFixed(5)
   opt_up_p_stock_baodi.innerHTML = parseFloat(tax_p_stock_baodi).toFixed(5)
-  opt_price_p_stock_baodi.innerHTML = parseFloat(tax_p_stock_baodi + stock_price).toFixed(5)
+  opt_price_p_stock_baodi.innerHTML = parseFloat(stock_price_baodi).toFixed(5)
   opt_buy_total.innerHTML = parseFloat(buy_total).toFixed(5)
   opt_sell_total.innerHTML = parseFloat(sell_total).toFixed(5)
   opt_win.innerHTML = parseFloat(win).toFixed(5)
