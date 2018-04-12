@@ -5,8 +5,24 @@
 /*#d65108*/
 /*#591f0a*/
 
+.padding-5rem {
+    padding: 5rem;
+}
 
-/* This is the global style of my website. */
+.float-left {
+    float: left;
+}
+
+.width-30pre {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.width-70pre {
+    box-sizing: border-box;
+    width: 70%;
+}
+
 
 .stop-float {
     clear: both;
