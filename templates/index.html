@@ -1,56 +1,121 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Blog++ 记录每一天!</title>
+    <title>操盘小能手</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
+
 <body>
-    <nav class="nav-hori">
-        <ul>
-            <li class="float-left"><a href="#">主页</a></li>
-            <li class="float-right"><a href="help.html">帮助</a></li>
-            <li class="float-right"><a href="#">注册</a></li>
-            <li class="float-right"><a href="#">登录</a></li>
-            <li class="float-right"><a href="personal-page.html">个人资料</a></li>
+        <nav class="nav-hori">
+            <ul>
+                <li class="float-left">
+                    <a class="nav-link" href="#">主页</a>
+                </li>
+                <li class="float-right">
+                    <a id="btnLogin" class="nav-link" href="about.html">我的</a>
+                </li>
+                <div class="stop-float"></div>
+            </ul>
+        </nav>
+        <header>
+            <p style="text-align: center; font-size: 4rem;">操盘小能手</p>
+            <hr>
+        </header>
+        <main>
+            <div class="float-left width-40pre padding-5rem">
+                <div>
+                    <label class="modal-label" for="stock-price">股价(单位: 元, 下同)</label>
+                    <br>
+                    <input value="" id="stock-price" class="input-text focus-light" type="number">
+                </div>
+                <div>
+                    <label class="modal-label" for="stock-num">股数</label>
+                    <br>
+                    <input id="stock-num" class="input-text focus-light" type="number">
+                </div>
+                <div>
+                    <label class="modal-label" for="sell-price">卖价</label>
+                    <br>
+                    <input id="stock-sell-price" class="input-text focus-light" type="number">
+                </div>
+                <button id="compute" class="btn btn-20rem">计算</button>
+            </div>
+
+            <div class="float-left width-60pre padding-5rem">
+                <p id="stock-message" class="stock-output-label">---------- 信息 ----------</p>
+                <p class="output-stock">股价:
+                    <span class="output-stock" id="opt-stock-price"></span>
+                </p>
+                <p class="output-stock">数量:
+                    <span class="output-stock" id="opt-stock-num"></span>
+                </p>
+                <p class="output-stock">买入成交额:
+                    <span class="output-stock" id="opt-buy-cje"></span>
+                </p>
+                <p class="output-stock">卖出成交额:
+                    <span class="output-stock" id="opt-sell-cje"></span>
+                </p>
+
+                <p id="stock-tax" class="stock-output-label">---------- 上税 ----------</p>
+                <p class="output-stock">保底上税:
+                    <span class="output-stock" id="opt-tax-total-baodi"></span>
+                </p>
+                <p class="output-stock">真实上税:
+                    <span class="output-stock" id="opt-tax-total"></span>
+                </p>
+                <p class="output-stock">保底每股上税:
+                    <span class="output-stock" id="opt-tax-p-stock-baodi"></span>
+                </p>
+                <p class="output-stock">真实每股上税:
+                    <span class="output-stock" id="opt-tax-p-stock"></span>
+                </p>
+                <p class="output-stock">保底每股上税率:
+                    <span class="output-stock" id="opt-tax-p-stock-precent-baodi"></span>
+                </p>
+                <p class="output-stock">真实每股上税率:
+                    <span class="output-stock" id="opt-tax-p-stock-precent"></span>
+                </p>
+
+                <p id="stock-baodi" class="stock-output-label">---------- 保本 ----------</p>
+                <p class="output-stock">每股涨多少保本:
+                    <span class="output-stock" id="opt-up-p-stock-baodi"></span>
+                </p>
+                <p class="output-stock">就是涨到:
+                    <span class="output-stock" id="opt-price-p-stock-baodi"></span>
+                </p>
+
+                <p id="stock-win" class="stock-output-label">---------- 盈利 ----------</p>
+                <p class="output-stock">买入成本:
+                    <span class="output-stock" id="opt-buy-total"></span>
+                </p>
+                <p class="output-stock">卖出收入:
+                    <span class="output-stock" id="opt-sell-total"></span>
+                </p>
+                <p class="output-stock">利润:
+                    <span class="output-stock" id="opt-win"></span>
+                </p>
+
+            </div>
             <div class="stop-float"></div>
-        </ul>
-    </nav>
-<header>
-    <h1>欢迎来到Blog++</h1>
-    <p>这是一个免费的笔记分享网站，注册账号并分享你的第一篇文章吧！</p>
-    <hr>
-</header>
-<section class="today">
-    <h2>今日动态</h2>
-    <ul>
-        <li>动态</li>
-        <li>动态</li>
-    </ul>
-</section>
-<section class="posts">
-    <h2>热门文章</h2>
-    <article>
-        <h2>Blog 1</h2>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-    </article>
-    <article>
-        <h2>Blog 2</h2>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-    </article>
-</section>
-<div class="stop-float"></div>
-<footer>
-    <hr>
-    <p><a href="about.html">关于我们</a></p>
-    <p>友情链接</p>
-    <ul>
-        <li><a href="http://commonmark.org/" target="_blank">CommonMark</a></li>
-        <li><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN Web 文档</a></li>
-        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-    </ul>
-</footer>
+        </main>
+        <footer>
+            <hr>
+            <p>友情链接</p>
+            <ul>
+                <li>
+                    <a href="http://cuppar.com/" target="_blank">我的博客</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN Web 文档</a>
+                </li>
+                <li>
+                    <a href="https://github.com/cuppar" target="_blank">GitHub</a>
+                </li>
+            </ul>
+        </footer>
+    <script src="../scripts/stock.js"></script>
 </body>
+
 </html>
