@@ -13,14 +13,14 @@
     float: left;
 }
 
-.width-30pre {
+.width-40pre {
     box-sizing: border-box;
-    width: 30%;
+    width: 40%;
 }
 
-.width-70pre {
+.width-60pre {
     box-sizing: border-box;
-    width: 70%;
+    width: 60%;
 }
 
 
