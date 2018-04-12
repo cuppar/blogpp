@@ -1,9 +1,9 @@
 'use strict'
 compute.onclick = function () {
   //输入
-  var stock_price = document.getElementById('stock-price').value
-  var stock_num = document.getElementById('stock-num').value
-  var stock_sell_price = document.getElementById('stock-sell-price').value
+  var stock_price = parseFloat(document.getElementById('stock-price').value)
+  var stock_num = parseFloat(document.getElementById('stock-num').value)
+  var stock_sell_price = parseFloat(document.getElementById('stock-sell-price').value)
   var compute = document.getElementById('compute')
   //输出
   var opt_stock_price = document.getElementById('opt-stock-price')
@@ -89,6 +89,7 @@ compute.onclick = function () {
   // 每股上税baodi
   var tax_p_stock_baodi = tax_total_baodi / stock_num
   var stock_price_baodi = tax_p_stock_baodi + stock_price
+  
   // 每股上税率baodi
   var tax_p_stock_precent_baodi = tax_p_stock_baodi / stock_price
 
