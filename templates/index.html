@@ -8,45 +8,19 @@
 </head>
 
 <body>
-    <div id="content">
-        <div id="modal-bg"></div>
-        <!-- modal login -->
-        <div id="modal-login">
-            <form action="../scripts/form.py" method="POST">
-                <div class="modal-logo">操盘小能手</div>
-                <div>
-                    <label class="modal-label" for="username">用户名</label>
-                    <br>
-                    <input class="input-text focus-light" type="text" id="username">
-                </div>
-                <div>
-                    <label class="modal-label" for="password">密码</label>
-                    <br>
-                    <input class="input-text focus-light" type="password" id="password">
-                </div>
-                <a id="cancel-login" class="btn-normal btn-10rem" href="#">取消</a>
-                <button id="confirm-login" class="btn btn-10rem" type="submit">登录</button>
-            </form>
-        </div>
         <nav class="nav-hori">
             <ul>
                 <li class="float-left">
                     <a class="nav-link" href="#">主页</a>
                 </li>
                 <li class="float-right">
-                    <a id="btnLogin" class="nav-link" href="about.html">关于</a>
-                </li>
-                <li class="float-right">
-                    <a class="nav-link" href="#">注册</a>
-                </li>
-                <li class="float-right">
-                    <a id="btnLogin" class="nav-link" href="#">登录</a>
+                    <a id="btnLogin" class="nav-link" href="about.html">我的</a>
                 </li>
                 <div class="stop-float"></div>
             </ul>
         </nav>
         <header>
-            <p style="text-align: center; font-size: 4rem;">Demo</p>
+            <p style="text-align: center; font-size: 4rem;">操盘小能手</p>
             <hr>
         </header>
         <main>
@@ -71,27 +45,57 @@
 
             <div class="float-left width-60pre padding-5rem">
                 <p id="stock-message" class="stock-output-label">---------- 信息 ----------</p>
-                <p class="output-stock">股价: <span class="output-stock" id="opt-stock-price"></span></p>
-                <p class="output-stock">数量: <span class="output-stock" id="opt-stock-num"></span></p>
-                <p class="output-stock">买入成交额: <span class="output-stock" id="opt-buy-cje"></span></p>
-                <p class="output-stock">卖出成交额: <span class="output-stock" id="opt-sell-cje"></span></p>
-                
+                <p class="output-stock">股价:
+                    <span class="output-stock" id="opt-stock-price"></span>
+                </p>
+                <p class="output-stock">数量:
+                    <span class="output-stock" id="opt-stock-num"></span>
+                </p>
+                <p class="output-stock">买入成交额:
+                    <span class="output-stock" id="opt-buy-cje"></span>
+                </p>
+                <p class="output-stock">卖出成交额:
+                    <span class="output-stock" id="opt-sell-cje"></span>
+                </p>
+
                 <p id="stock-tax" class="stock-output-label">---------- 上税 ----------</p>
-                <p class="output-stock">保底上税: <span class="output-stock" id="opt-tax-total-baodi"></span></p>
-                <p class="output-stock">真实上税: <span class="output-stock" id="opt-tax-total"></span></p>
-                <p class="output-stock">保底每股上税: <span class="output-stock" id="opt-tax-p-stock-baodi"></span></p>
-                <p class="output-stock">真实每股上税: <span class="output-stock" id="opt-tax-p-stock"></span></p>
-                <p class="output-stock">保底每股上税率: <span class="output-stock" id="opt-tax-p-stock-precent-baodi"></span></p>
-                <p class="output-stock">真实每股上税率: <span class="output-stock" id="opt-tax-p-stock-precent"></span></p>
-                
+                <p class="output-stock">保底上税:
+                    <span class="output-stock" id="opt-tax-total-baodi"></span>
+                </p>
+                <p class="output-stock">真实上税:
+                    <span class="output-stock" id="opt-tax-total"></span>
+                </p>
+                <p class="output-stock">保底每股上税:
+                    <span class="output-stock" id="opt-tax-p-stock-baodi"></span>
+                </p>
+                <p class="output-stock">真实每股上税:
+                    <span class="output-stock" id="opt-tax-p-stock"></span>
+                </p>
+                <p class="output-stock">保底每股上税率:
+                    <span class="output-stock" id="opt-tax-p-stock-precent-baodi"></span>
+                </p>
+                <p class="output-stock">真实每股上税率:
+                    <span class="output-stock" id="opt-tax-p-stock-precent"></span>
+                </p>
+
                 <p id="stock-baodi" class="stock-output-label">---------- 保本 ----------</p>
-                <p class="output-stock">每股涨多少保本: <span class="output-stock" id="opt-up-p-stock-baodi"></span></p>
-                <p class="output-stock">就是涨到: <span class="output-stock" id="opt-price-p-stock-baodi"></span></p>
-                
+                <p class="output-stock">每股涨多少保本:
+                    <span class="output-stock" id="opt-up-p-stock-baodi"></span>
+                </p>
+                <p class="output-stock">就是涨到:
+                    <span class="output-stock" id="opt-price-p-stock-baodi"></span>
+                </p>
+
                 <p id="stock-win" class="stock-output-label">---------- 盈利 ----------</p>
-                <p class="output-stock">买入成本: <span class="output-stock" id="opt-buy-total"></span></p>
-                <p class="output-stock">卖出收入: <span class="output-stock" id="opt-sell-total"></span></p>
-                <p class="output-stock">利润: <span class="output-stock" id="opt-win"></span></p>
+                <p class="output-stock">买入成本:
+                    <span class="output-stock" id="opt-buy-total"></span>
+                </p>
+                <p class="output-stock">卖出收入:
+                    <span class="output-stock" id="opt-sell-total"></span>
+                </p>
+                <p class="output-stock">利润:
+                    <span class="output-stock" id="opt-win"></span>
+                </p>
 
             </div>
             <div class="stop-float"></div>
@@ -111,8 +115,6 @@
                 </li>
             </ul>
         </footer>
-    </div>
-    <script src="../scripts/modal.js"></script>
     <script src="../scripts/stock.js"></script>
 </body>
 

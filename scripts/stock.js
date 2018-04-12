@@ -112,37 +112,9 @@ compute.onclick = function () {
   opt_tax_p_stock_precent_baodi.innerHTML = parseFloat(tax_p_stock_precent_baodi).toFixed(5)
   opt_tax_p_stock_precent.innerHTML = parseFloat(tax_p_stock_precent).toFixed(5)
   opt_up_p_stock_baodi.innerHTML = parseFloat(tax_p_stock_baodi).toFixed(5)
-  opt_price_p_stock_baodi.innerHTML = parseFloat(tax_p_stock_baodi+stock_price).toFixed(5)
+  opt_price_p_stock_baodi.innerHTML = parseFloat(tax_p_stock_baodi + stock_price).toFixed(5)
   opt_buy_total.innerHTML = parseFloat(buy_total).toFixed(5)
   opt_sell_total.innerHTML = parseFloat(sell_total).toFixed(5)
   opt_win.innerHTML = parseFloat(win).toFixed(5)
 
-
-
-  // print('股价：', stock_price)
-  // print('数量:', stock_num)
-  // print('买入成交额： {0:.6f}'.format(buy_cje))
-  // print('卖出成交额： {0:.6f}'.format(sell_cje))
-
-  // line('税')
-  // print('保底上税： {0:.6f}'.format(tax_total_baodi))
-  // print('真实上税： {0:.6f}'.format(tax_total))
-  // print('保底每股上税： {0:.6f}'.format(tax_p_stock_baodi))
-  // print('真实每股上税： {0:.6f}'.format(tax_p_stock))
-  // print('保底每股上税率： {0:.6f}'.format(tax_p_stock_precent_baodi))
-  // print('真实每股上税率： {0:.6f}'.format(tax_p_stock_precent))
-
-  // line('保本')
-  // # print('每股涨： {0:.6f} 才能保本'.format(sell_cje_baodi/stock_num-stock_price))
-  // # print('就是涨到： {0:.6f}'.format(sell_cje_baodi/stock_num))
-  // print('每股涨： {0:.6f} 才能保本'.format(tax_p_stock_baodi))
-  // print('就是涨到： {0:.6f}'.format(tax_p_stock_baodi+stock_price))
-
-  // line('盈利')
-  // print('买入成本： {0:.6f}'.format(buy_total))
-  // print('卖出收入： {0:.6f}'.format(sell_total))
-  // print('利润： {0:.6f}'.format(win))
-
-  // line('')
-  // print()
 }
