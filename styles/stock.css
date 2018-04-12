@@ -1,0 +1,10 @@
+.stock-output-label {
+  font-size: 2rem;
+  text-align: center;
+  color: red;
+}
+
+.output-stock {
+  font-size: 2rem;
+  margin-left: 5rem; 
+}

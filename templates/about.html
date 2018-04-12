@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Blog++ 记录每一天!</title>
+    <title>操盘小能手</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
 </head>
+
 <body>
-<nav class="nav-hori">
-    <ul>
-        <li class="float-left"><a href="index.html">主页</a></li>
-        <li class="float-right"><a href="help.html">帮助</a></li>
-        <li class="float-right"><a href="#">注册</a></li>
-        <li class="float-right"><a href="#">登录</a></li>
-        <li class="float-right"><a href="personal-page.html">个人资料</a></li>
-        <div class="stop-float"></div>
-    </ul>
-</nav>
-<header>
-    <h1>Blog++ - 开发者信息</h1>
-    <p>这是一个免费的笔记分享网站，注册账号并分享你的第一篇文章吧！</p>
-    <hr>
-</header>
+    <div id="content">
+        <div id="modal-bg"></div>
+        <!-- modal login -->
+        <div id="modal-login">
+            <form action="#">
+                <div class="modal-logo">操盘手</div>
+                <div>
+                    <label class="modal-label" for="username">用户名</label>
+                    <br>
+                    <input class="input-text focus-light" type="text" id="username">
+                </div>
+                <div>
+                    <label class="modal-label" for="password">密码</label>
+                    <br>
+                    <input class="input-text focus-light" type="password" id="password">
+                </div>
+                <a id="cancel-login" class="btn-normal btn-10rem" href="#">取消</a>
+                <button id="confirm-login" class="btn btn-10rem" type="submit">登录</button>
+            </form>
+        </div>
+        <div id="modal-signup">
+            <form action="#">
+                <div class="modal-logo">操盘手</div>
+                <div>
+                    <label class="modal-label" for="username">用户名</label>
+                    <br>
+                    <input class="input-text focus-light" type="text" id="username">
+                </div>
+                <div>
+                    <label class="modal-label" for="password">密码</label>
+                    <br>
+                    <input class="input-text focus-light" type="password" id="password">
+                </div>
+                <div>
+                    <label class="modal-label" for="password">确认密码</label>
+                    <br>
+                    <input class="input-text focus-light" type="password" id="password2">
+                </div>
+                <a id="cancel-signup" class="btn-normal btn-10rem" href="#">取消</a>
+                <button id="confirm-signup" class="btn btn-10rem" type="submit">注册</button>
+            </form>
+        </div>
+        <nav class="nav-hori">
+            <ul>
+                <li class="float-left">
+                    <a class="nav-link" href="index.html">主页</a>
+                </li>
+                <li class="float-right">
+                    <a id="btnSignup" class="nav-link" href="#">注册</a>
+                </li>
+                <li class="float-right">
+                    <a id="btnLogin" class="nav-link" href="#">登录</a>
+                </li>
+                <div class="stop-float"></div>
+            </ul>
+        </nav>
+        <header class="text-2rem">
+            <h1>操盘小能手 - 开发者信息</h1>
+            <p>这是一个免费的股票计算器网站，马上算算今天赚了多少吧！</p>
+            <hr>
+        </header>
 
-<section class="about">
-    <p>我们是来自云南大学的三位本科生，这个博客网站是我们学习Web开发的一个练手项目，希望你能喜欢。</p>
-    <p>如果你对Blog++有什么建议或意见，可以通过<span class="text-primary">QQ:2654525303</span>联系我们。</p>
-    <p><a href="https://github.com/Rabbit-A512">我的GitHub</a></p>
-</section>
+        <section class="about text-2rem">
+            <p>我是来自云南大学的一位本科生，这个网站是我为广大股民提供的免费服务，希望你能喜欢。</p>
+            <p>如果你对股票小能手有什么建议或意见，可以联系我。</p>
+            <p>QQ: 981295188</p>
+            <p>微信: cuppar</p>
+            <p>Email: cuppar.hzy@gmail.com</p>
+            <p>Github: <a href="https://github.com/cuppar/" target="_blank">我的GitHub</a></p>
+            <p>祝好运！</p>
+        </section>
 
-<footer>
-    <hr>
-    <p><a href="about.html">关于我们</a></p>
-    <p>友情链接</p>
-    <ul>
-        <li><a href="http://commonmark.org/" target="_blank">CommonMark</a></li>
-        <li><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN Web 文档</a></li>
-        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-    </ul>
-</footer>
+        <footer>
+            <hr>
+            <p class="text-2rem">友情链接</p>
+            <ul class="text-2rem">
+                <li>
+                    <a href="http://cuppar.com/" target="_blank">我的博客</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN Web 文档</a>
+                </li>
+                <li>
+                    <a href="https://github.com/cuppar/" target="_blank">我的GitHub</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../scripts/modal.js"></script>
 </body>
+
 </html>
