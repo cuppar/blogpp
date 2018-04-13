@@ -1,10 +1,10 @@
 'use strict'
+var compute = document.getElementById('compute')
 compute.onclick = function () {
   //输入
   var stock_price = parseFloat(document.getElementById('stock-price').value)
   var stock_num = parseFloat(document.getElementById('stock-num').value)
   var stock_sell_price = parseFloat(document.getElementById('stock-sell-price').value)
-  var compute = document.getElementById('compute')
   //输出
   var opt_stock_price = document.getElementById('opt-stock-price')
   var opt_stock_num = document.getElementById('opt-stock-num')

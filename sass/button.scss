@@ -249,6 +249,8 @@ $btn-add5rem-padding-left: 5rem;
 
 //btn-5rem
 .btn-5rem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 5rem;
 }
@@ -256,6 +258,8 @@ $btn-add5rem-padding-left: 5rem;
 
 //btn-10rem
 .btn-10rem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 10rem;
 }
@@ -263,6 +267,8 @@ $btn-add5rem-padding-left: 5rem;
 
 //btn-20rem
 .btn-20rem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 20rem;
 }
@@ -270,6 +276,8 @@ $btn-add5rem-padding-left: 5rem;
 
 //btn-30rem
 .btn-30rem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 30rem;
 }
@@ -277,12 +285,16 @@ $btn-add5rem-padding-left: 5rem;
 
 //btn-40rem
 .btn-40rem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 40rem;
 }
 
 //btn-50rem
 .btn-50rem {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 50rem;
 }

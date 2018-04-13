@@ -10,7 +10,7 @@ $modal-focus-outline-color: #bec6f1;
   background-color: $modal-bg-color;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -9998;
 }
 
 #modal-login {
@@ -22,7 +22,7 @@ $modal-focus-outline-color: #bec6f1;
   width: 20%;
   margin: 13% 37%;
   padding: 4rem;
-  z-index: -1;
+  z-index: -9999;
   border: $modal-border-color 0.2rem solid;
   border-radius: 1rem;
   text-align: left;
