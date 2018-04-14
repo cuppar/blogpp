@@ -1,2 +1,1 @@
-# Blog++
-## A nice blog.
+# 股票小能手
